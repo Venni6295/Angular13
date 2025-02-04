@@ -1,0 +1,26 @@
+<img src="/assets/home.jpg" alt="home" style="height: 500px; width: 100%;">
+<div>
+    <p style="text-align: center;color:green"><strong>Best Guide to USPS Operation Santa®</strong></p>
+    <p style="text-align: center;color:red">Help answer sad letters to Santa written by children who need a brighter
+        Christmas</p>
+    <p>She mailed her letter to Santa and asked only for a warm coat, new shoes, and a toy. Our volunteer adopted it at
+        the USPS Operation Santa ® website, and made her wish come true. When you adopt a child’s letter to Santa, it’s
+        micro-philanthropy, direct from you to a child, with no charity involved. </p>
+</div>
+
+<h2>Products</h2>
+<form #productsForm="ngForm" (ngSubmit)="saveProduct(productsForm.value)">
+    <div class="form-group">
+        <label for="productName">Product Name</label>
+        <input type="text" class="form-control" name="productName" ngModel>
+    </div>
+    <div class="form-group">
+        <label for="productModel">Model</label>
+        <input type="text" class="form-control" name="productModel" ngModel>
+    </div>
+    <div class="form-group">
+        <label for="productPrice">Price</label>
+        <input type="text" class="form-control" name="productPrice" ngModel>
+    </div>
+    <button type="submit" class="btn btn-success">Add Product</button>
+</form>

@@ -1,0 +1,13 @@
+<!-- data-elementor-device-mode -->
+<div class="row">
+    <img class="p-0" src="\assets\header-home.jpg" alt="headerImage">
+</div>
+<div class="row main-menu-section">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <ul class="nav navbar-nav" *ngFor="let menu of siteMenus">
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a [routerLink]="menu.Path" class="nav-link">{{menu.Name | uppercase}}</a>
+            </li>
+        </ul>
+    </nav>
+</div>

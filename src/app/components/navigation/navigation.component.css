@@ -1,0 +1,17 @@
+.main-menu-section {
+    background-color: #720903;
+    color: #fff;
+}
+.navbar {
+    padding:0px;
+}
+.nav-link {
+    margin:5px;
+    color: white;
+    font-size: bold;
+}
+
+.active {
+    background-color: #226A1E;
+    color: #fff !important;
+}
